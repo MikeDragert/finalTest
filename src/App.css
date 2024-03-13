@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.mainWindow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content:space-evenly;
+}
+
+#phaser-game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  border: 0;
+
+  canvas {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
