@@ -28,8 +28,9 @@ function App() {
     this.platforms = this.physics.add.staticGroup();
     this.platforms.physicsBodyType = Phaser.Physics.ARCADE;
 
-    let ground = this.platforms.create(0, 600, 'ground').setScale(1);
+    let ground = this.platforms.create(100, 600, 'ground').setScale(1);
     ground.body.setSize(2000,80)
+    
     this.physics.add.collider(this.player, this.platforms);
 
     this.left = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
